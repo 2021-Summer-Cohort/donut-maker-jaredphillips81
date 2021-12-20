@@ -43,15 +43,20 @@ header{
 }
 .main{
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px;
+    align-items: center;
 }
 .main-donut-button{
     border-width: thick;
     background-color: rgb(143, 211, 179);
     display: flex;
     justify-content: center;
+    border-radius: 10px;
     width: 165px;
     height: 125px;
+    transform: translateY(2px);
 }
 .donut-image{
     display: flex;
@@ -59,8 +64,35 @@ header{
     width: 140px;
     height: 100px;
 }
+.numbers-box{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+
+}
+.donut-each-click{
+    display: flex;
+    font-family: monospace;
+    align-items: center;
+    font-size: 23px;
+
+}
+.donut-each-second{
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    align-items: center;
+    font-size: 35px;
+    font-variant-numeric:oldstyle-nums;
+}
+.total-count{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width: auto;
+}
 .clicker-and-multiplier{
-    padding-top: 20px;
+    padding-top: 25px;
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
